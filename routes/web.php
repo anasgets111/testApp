@@ -5,7 +5,7 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return "Hi Su";
+    return "another test that only pushes to production if tests pass";
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
