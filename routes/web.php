@@ -5,7 +5,7 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return "testing github actions";
+    return "Hi Su";
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
