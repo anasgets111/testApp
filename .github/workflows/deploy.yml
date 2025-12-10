@@ -97,7 +97,7 @@ jobs:
 
     steps:
       - name: Start SSH agent and add key
-        uses: webfactory/ssh-agent@v0
+        uses: webfactory/ssh-agent@v0.9.1
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
 
