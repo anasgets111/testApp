@@ -5,7 +5,7 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return "another test that only pushes to production if tests pass";
+    return "testing atomic deploy";
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
