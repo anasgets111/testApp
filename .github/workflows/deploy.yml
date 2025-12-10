@@ -108,6 +108,5 @@ jobs:
 
       - name: Run remote deploy script
         run: |
-          ssh -o StrictHostKeyChecking=no \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
-            "UPDATE_COMPOSER=1 /opt/deploy/testApp/deploy.sh"
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+          "BRANCH=main UPDATE_COMPOSER=1 /opt/deploy/testApp/deploy.sh"
